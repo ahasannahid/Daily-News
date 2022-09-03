@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daily News || Blog</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body class="bg-light">
+    <!--Navbar start  -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container fw-bold">
+            <a class="navbar-brand" href="#"><span class="text-bg-success p-1 rounded">Daily</span> News</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="index.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="blog.html">Blog</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <hr>
+    <!--Navbar end  -->
+    <!-- header start -->
+    <header>
+      <section class="mb-3 py-3">
+        <div class=" container d-flex flex-row flex-wrap justify-content-between align-content-center" id="header-ul">                   
+        </div>
+     </section>   
+    </header>
+    <!-- header end -->
+
+    <main>
+        <!-- frequently ask question start -->
+    <section class="w-50 mx-auto my-3">
+        <section class="bg-white mb-5 p-3 border-0 rounded container text-center" id="total-items">
+            <h2>Choose your Favourite Question</h2>
+        </section>
+
+        <div class="accordion" id="question">
+  
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                What is the difference between var, const and let.
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#question">
+              <div class="accordion-body text-muted">
+                <p class="text-muted">
+                  <strong>Var:</strong> Before the advent of ES6, var declarations ruled. There are issues associated with variables declared with var, though. That is why it was necessary for new ways to declare variables to emerge. First, let's get to understand var more before we discuss those issues.The scope is global when a var variable is declared outside a function. This means that any variable that is declared with var outside a function block is available for use in the whole window.
+                  var is function scoped when it is declared within a function. This means that it is available and can be accessed only within that function. <br>
+
+                  <strong>Let:</strong> let is now preferred for variable declaration. It's no surprise as it comes as an improvement to var declarations. It also solves the problem with var that we just covered. Let's consider why this is so.A block is a chunk of code bounded by {}. A block lives in curly braces. Anything within curly braces is a block.
+                  So a variable declared in a block with let  is only available for use within that block. <br>
+
+                  <strong>Const:</strong> Variables declared with the const maintain constant values. const declarations share some similarities with let declarations.Like let declarations, const declarations can only be accessed within the block they were declared.const cannot be updated or re-declared.
+
+                </p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                What is the difference between Arrow function and Regular function.
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#question">
+              <div class="accordion-body">
+                <p class="text-muted">Regular functions created using function declarations or expressions are constructible and callable. Since regular functions are constructible, they can be called using the new keyword.
+                  However, the arrow functions are only callable and not constructible, i.e arrow functions can never be used as constructor functions. Hence, they can never be invoked with the new keyword. Unlike regular functions, arrow functions do not have their own this. The value of this inside an arrow function remains the same throughout the lifecycle of the function and is always bound to the value of this in the closest non-arrow parent function.</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                What is the difference between map(), foreach(), filter() and find()?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#question">
+              <div class="accordion-body">
+                <p class="text-muted">
+                  <strong>forEach() :</strong> .forEach(), is used to execute the same code on every element in an array but does not change the array and it returns undefined. <br>
+                  <strong>filter() :</strong> .filter() checks every element in an array to see if it meets a certain criteria and returns a new array with the elements that return truthy for the criteria. <br>
+                  <strong>map() :</strong> .map() executes the same code on every element in an array and returns a new array with the updated elements. <br>
+                  <strong>find() :</strong>  .find() method returns the value of the first element that passes a test. The find() method executes a function for each array element. The find() method returns undefined if no elements are found.
+                </p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Why we use template string?
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+              data-bs-parent="#question">
+              <div class="accordion-body">
+                <p class="text-muted">
+                  Template strings are a powerful feature of modern JavaScript released in ES6. It lets us insert/interpolate variables and expressions into strings without needing to concatenate like in older versions of JavaScript. It allows us to create strings that are complex and contain dynamic elements
+                </p>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </section>
+      <!--frequently ask question end -->
+    </main>
+
+     <!-- footer -->
+     <footer>
+        <div class=" mt-5  text-center border bottom-0">
+            <h5 class="p-10">
+                Copyright &copy;2022 All Rights Reserved <br /><span class="fw-bold text-danger">Daily</span>
+                News
+            </h5>
+        </div>
+    </footer>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+    </html>
+    
+</body>

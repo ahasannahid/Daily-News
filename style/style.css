@@ -1,0 +1,13 @@
+.border-none{
+    border: none;
+}
+
+.author-img{
+    height: 50%;
+    width: 20%;
+    border-radius: 50%;
+}
+
+.news-date{
+    margin-top: -10px;
+}
